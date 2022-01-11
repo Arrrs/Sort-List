@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="cont">
+            <h1>Sort List</h1>
+            <div class="main">
+                <label for="" >Name / Value Pair</label>
+                <div></div>
+                <div class="first">
+                    <input id="input" type="text" value="Name=Value">
+                </div>
+                <div class="sec">
+                    <button id="add" onmouseup="add(), showXML()">Add</button>
+                </div>
+                <label for="">Name / Value Pair List</label>
+                <div></div>
+                <div class="out" id="out"></div>
+                <div class="four">
+                    <button id="name" onmouseup="sortNameValue(0), showXML()">Sort by Name</button>
+                    <button id="value" onmouseup="sortNameValue(1), showXML()">Sort by Value</button>
+                    <button id="delete" onmouseup="remove()">Delete</button>
+                    <button id="xmlButton" onmouseup="appearXML(), showXML()">Show XML</button>
+                </div>
+            </div>
+            <div class="bottom" id="bottom">
+                <div class="xml" id="xml"></div>
+                <button id="hid" onmouseup="hid()">Hide</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

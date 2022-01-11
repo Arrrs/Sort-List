@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgba(139, 161, 159, 0.822);
+}
+.cont {
+    width: 650px;
+    margin: 50px auto;
+    background-color: rgba(138, 138, 138, 0.671);
+    border-radius: 25px;
+    box-shadow: 0px 0px 16px rgba(28, 48, 75, 0.507);
+    padding: 20px 40px 40px;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    column-gap: 2rem;
+}
+.first {
+    height: 25px;
+    width: 100%;
+}
+.first input {
+    width: 100%;
+    border: 0;
+    height: 25px;
+    background-color: rgb(204, 204, 204);
+}
+.sec {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.out {
+    background-color: white;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+}
+.four {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: baseline;
+}
+label {
+    text-align: left;
+}
+button {
+    padding: 2px 12px;
+    height: 25px;
+}
+.bottom {
+    margin-top: 50px;
+    display: none;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.xml {
+    width: 75%;
+    min-height: 80px;
+    padding: 10px 20px;
+    text-align: left;
+    background-color: white;
+    margin: auto auto 30px;
+}
+#xmlButton {
+    transition: all 0.5s;
+}
