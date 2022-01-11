@@ -6,12 +6,12 @@ function add() {
     let name = [];
     let value = [];
     if (arr.length == 0 || arr.includes(' ')) {
-        alert("Wrong input");
+        wrong();
         return cont;
     }
     name: for (let i = 0; i < arr.length; i++) {
         if ((arr[i] != "=" && i == arr.length - 2) || arr[0] == "=") {
-            alert("Wrong input");
+            wrong();
             return cont;
         } else if (arr[i] != "=") {
             name.push(arr[i]);
@@ -55,6 +55,8 @@ function sortNameValue(nameOrValue) {
 function remove() {
     cont = [];
     document.getElementById("out").innerHTML = "";
+    document.getElementById("xml").innerHTML = '';
+    hid();
 }
 
 function showXML() {
@@ -83,4 +85,9 @@ function hid() {
     setTimeout (function() {
         a.display = "none";
     }, 300)
+}
+function wrong() {
+    let a = document.getElementById("input").style;
+    a.backgroundColor = "rgb(214, 97, 97)";
+    setTimeout (() => a.backgroundColor = "rgb(204, 204, 204)", 400)
 }

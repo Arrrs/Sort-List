@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 body {
     background-color: rgba(139, 161, 159, 0.822);
@@ -30,8 +31,10 @@ h1 {
 .first input {
     width: 100%;
     border: 0;
+    padding: 0px 10px;
     height: 25px;
     background-color: rgb(204, 204, 204);
+    transition: background-color 0.35s;
 }
 .sec {
     height: 30px;
@@ -42,6 +45,8 @@ h1 {
     background-color: white;
     width: 100%;
     background-color: rgb(204, 204, 204);
+    text-align: left;
+    padding: 8px 10px;
 }
 .four {
     display: flex;
